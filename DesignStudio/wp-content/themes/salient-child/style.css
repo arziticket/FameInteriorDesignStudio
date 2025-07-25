@@ -1,0 +1,47 @@
+/*
+Theme Name: Salient Child Theme
+Description: This is a custom child theme for Salient
+Theme URI:   https://themeforest.net/item/salient-responsive-multipurpose-theme/4363266
+Author: ThemeNectar
+Author URI:  https://themeforest.net/user/themenectar
+Template: salient
+Version: 1.0
+*/
+
+body {
+    font-family: 'NeueRegular', Arial !important
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('fonts/HelveticaNeue.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'NeueRegular';
+    src: url('fonts/NeueHaasUnicaPro_regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'SMLi';
+    src: url('fonts/SMLi.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+p {
+    font-family: 'NeueRegular' !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'SMLi' !important;
+}
