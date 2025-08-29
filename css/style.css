@@ -236,6 +236,11 @@ h6,
     background-size: cover;
 }
 
+.page-header1 {
+    background:  url('../img/formal View 7.png') center center no-repeat;
+    background-size: cover;
+}
+
 .breadcrumb-item+.breadcrumb-item::before {
     color: var(--light);
 }
