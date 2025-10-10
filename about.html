@@ -38,8 +38,9 @@
             text-align: justify;
         }
     </style>
+   
 
-    <style>
+        <style >
         /* --- Team Image Styling --- */
         .team-img {
             width: 140px;
@@ -51,10 +52,10 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-            .team-img:hover {
-                transform: scale(1.1);
-                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-            }
+        .team-img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
 
         .fact-item {
             border-radius: 15px;
@@ -100,11 +101,12 @@
         <a class="navbar-brand" href="index.html">
             <img src="img/icons/Oldsmall.png" alt="Logo" style="height: 50px;">
         </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <div class=" collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-collapse justify-content-end" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
