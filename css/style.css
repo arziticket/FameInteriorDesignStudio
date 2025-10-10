@@ -557,3 +557,99 @@ h6,
     color: var(--primary);
 }
 
+#whatsapp-float {
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: linear-gradient(135deg,#25D366,#128C7E);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(18, 140, 126, 0.25);
+    z-index: 9999;
+    text-decoration: none;
+    transition: transform .18s ease, box-shadow .18s ease;
+    will-change: transform;
+}
+
+    /* Pulse animation */
+    #whatsapp-float::after {
+        content: "";
+        position: absolute;
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        background: rgba(37,211,102,0.12);
+        animation: waPulse 2.2s infinite;
+        z-index: 0;
+    }
+
+@keyframes waPulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    70% {
+        transform: scale(1.9);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(2.2);
+        opacity: 0;
+    }
+}
+
+#whatsapp-float:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 14px 36px rgba(18,140,126,0.25);
+}
+
+/* icon */
+.wa-icon {
+    width: 28px;
+    height: 28px;
+    fill: #fff;
+    z-index: 2;
+}
+
+/* small badge/label */
+.wa-badge {
+    position: absolute;
+    right: 72px;
+    bottom: 100px;
+    background: #fff;
+    color: #128C7E;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 9999;
+}
+
+/* Hide badge on small screens to avoid covering content */
+@media (max-width: 480px) {
+    .wa-badge {
+        display: none;
+    }
+
+    #whatsapp-float {
+        right: 14px;
+        bottom: 14px;
+        width: 56px;
+        height: 56px;
+    }
+
+        #whatsapp-float::after {
+            width: 56px;
+            height: 56px;
+        }
+}
