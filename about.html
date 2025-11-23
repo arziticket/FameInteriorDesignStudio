@@ -37,6 +37,7 @@
         .text-justify {
             text-align: justify;
         }
+       
     </style>
    
 
@@ -67,6 +68,46 @@
             justify-content: center;
             align-items: center;
         }
+
+            .facts-section {
+                /*background: linear-gradient( rgba(255,255,255,0.9), rgba(255,255,255,0.9) ), url('img/carousel-2.jpg');*/ /* put any interior bg */
+                background-size: cover;
+                background-position: center;
+                border-top: 1px solid #d4b07c;
+                border-bottom: 1px solid #d4b07c;
+            }
+
+            .fact-box {
+                padding: 25px 10px;
+                border-radius: 12px;
+                background: #ffffffb0;
+                border: 1px solid #d4b07c5f;
+                transition: .3s;
+            }
+
+                .fact-box:hover {
+                    background: white;
+                    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+                    transform: translateY(-6px);
+                }
+
+            .fact-number {
+                font-size: 48px;
+                font-weight: 800;
+                color: #2b2b2b;
+                margin-bottom: 5px;
+                letter-spacing: -1px;
+            }
+
+            .fact-label {
+                font-size: 15px;
+                font-weight: 600;
+                color: #a98044;
+                text-transform: uppercase;
+                letter-spacing: .5px;
+            }
+
+
     </style>
 </head>
 
@@ -77,7 +118,7 @@
         <div class="row gx-0 d-none d-lg-flex">
             <div class="col-lg-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center py-3 me-3">
-                    <a class="text-body px-2" href="#"><i class="fa fa-phone-alt text-primary me-2"></i>+91 865 5038677</a>
+                    <a class="text-body px-2" href="tel:+919702011759"><i class="fa fa-phone-alt text-primary me-2"></i> +91 970 2011759</a><a class="text-body px-2" href="tel:+918655038677"><i class="fa fa-phone-alt text-primary me-2"></i>+91 865 5038677</a>
                     <a class="text-body px-2" href="#"><i class="fa fa-envelope-open text-primary me-2"></i>info@famestudio.co.in</a>
                 </div>
             </div>
@@ -87,8 +128,8 @@
                     <a class="text-body px-2" href="">Privacy</a>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center">
-                    <a class="btn btn-sm-square btn-outline-body me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-sm-square btn-outline-body me-1" href=""><i class="fab fa-twitter"></i></a>
+
+
                     <a class="btn btn-sm-square btn-outline-body me-1" href=""><i class="fab fa-linkedin-in"></i></a>
                     <a class="btn btn-sm-square btn-outline-body me-0" href=""><i class="fab fa-instagram"></i></a>
                 </div>
@@ -96,31 +137,32 @@
         </div>
     </div>
     <!-- Topbar End -->
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-        <a class="navbar-brand" href="index.html">
-            <img src="img/icons/Oldsmall.png" alt="Logo" style="height: 50px;">
-        </a>
-        <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class=" collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-collapse justify-content-end" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <a href="GetQuote.html" class="btn btn-primary py-2 px-4 d-none d-lg-block">GET QUOTE</a>
-        </div>
-    </nav>
-    <!-- Navbar End -->
     <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid page-header2  mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s" style="background: #faebd775;">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/icons/small.png" alt="Logo" style="height: 50px;">
+            </a>
+            <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class=" collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav" >
+                        <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <a  href="GetQuote.html" class="btn btn-primary py-2 px-4 d-none d-lg-block">GET QUOTE</a>
+            </div>
+        </nav>
+        <!-- Navbar End -->
         <div class="container py-5">
             <h1 class="display-1 text-white animated slideInDown">About Us</h1>
             <nav aria-label="breadcrumb animated slideInDown">
@@ -132,18 +174,15 @@
             </nav>
         </div>
     </div>
-    <!-- Page Header End -->
-    <!-- About Start -->
-    <!--<div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">-->
-    <!--<div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-         <div class="about-img">
-             <img class="img-fluid" src="img/about-1.jpg" alt="">
-             <img class="img-fluid" src="img/about-2.jpg" alt="">
-         </div>
-     </div>-->
-    <!--<div class="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
+
+    
+   
+        
+
+        <div class="container-xxl py-5">
+
+            <div class="container pt-5">
+                <div class="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
                     <h4 class="section-title">About Us - Fame Studio</h4>
                     <h1 class="display-5 mb-4">Designing Spaces with Heart, Craft, and Clarity</h1>
                     <p>Based in the bustling city of Mumbai, Fame Studio is more than just an interior design firm—it’s a creative house where ideas meet craftsmanship and vision becomes reality. We believe that interiors should do more than look beautiful; they should inspire, comfort, and truly reflect the people who live in them. Every home or commercial space we design is carefully curated to combine elegance with functionality, ensuring it feels timeless today and adaptable for tomorrow.</p>
@@ -151,157 +190,165 @@
                     <p class="mb-4">Our work covers luxury homes, commercial projects, and custom furniture. What makes us special is the way we listen first—to your stories, your lifestyle, and your dreams. Every design we create is not just a project, but a reflection of the people who will live and work in it. The outcome is always personal, practical, and timeless..</p>
                 </div>
 
-                <div class="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
-                    <p>At the heart of Fame Studio is a passionate team that treats every project like their own, ensuring warmth, care, and precision in every detail.</p>
-                    <h3 class="section-title">Umar Memon — Founder & Design Head</h3>
-                    <p>With 8+ years of experience in residential and commercial interiors, Umar shapes Fame Studio’s modern yet soulful style. He is known for understanding clients’ needs and turning them into elegant, practical, and timeless spaces.</p>
+                <section class="facts-section py-5 my-5">
+                    <div class="container py-4">
+                        <div class="row text-center g-4">
+
+                            <div class="col-6 col-lg-3">
+                                <div class="fact-box">
+                                    <h1 class="fact-number">10+</h1>
+                                    <p class="fact-label">Years Experince</p>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-lg-3">
+                                <div class="fact-box">
+                                    <h1 class="fact-number">75</h1>
+                                    <p class="fact-label">Projects Completed</p>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-lg-3">
+                                <div class="fact-box">
+                                    <h1 class="fact-number">10+</h1>
+                                    <p class="fact-label">Team Members</p>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-lg-3">
+                                <div class="fact-box">
+                                    <h1 class="fact-number">1,00,000 </h1>
+                                    <p class="fact-label">Sqft Under Construction</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+              
+                <div class="col-lg-12 wow fadeIn text-center" data-wow-delay="0.5s">
+                    <h4 class="section-title">Fame Studio - Team Members</h4>
                 </div>
-                <div class="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
-                    <h3 class="section-title">Bilal — Co-Founder & Senior Designer</h3>
-                    <p>
-                        Bilal is a creative designer with a sharp eye for detail and a love for bespoke interiors. He brings each client’s personality into their space through unique ideas and thoughtful detailing, making every project stylish, functional, and one of a kind.
-                    </p>
-                </div>
-                <div class="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
-                    <h3 class="section-title">Adnan Pawaskar — Co-Founder & Associate Designer</h3>
-                    <p>With 5+ years of experience in residential and commercial interiors, Adnan specializes in site execution and project coordination. He ensures every design is delivered with precision, practicality, and on-time completion.</p>
+                <div class="row g-4 mt-5">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="fact-item text-center bg-light h-100 p-5 pt-0">
+                            <div class="mb-3">
+                                <img src="img/Team/Umar.jpeg" alt="Umar Memon" class="team-img">
+                            </div>
+                            <h3 class="mb-3">Umar Memon — Founder & Design Head</h3>
+                            <p class="mb-0">
+                                With 10+ years of experience in residential and commercial interiors, Umar shapes Fame Studio’s modern yet soulful style. He is known for understanding clients’ needs and turning them into elegant, practical, and timeless spaces.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="fact-item text-center bg-light h-100 p-5 pt-0">
+                            <div class="mb-3">
+                                <img src="img/Team/Bilal.jpeg" alt="Bilal" class="team-img">
+                            </div>
+                            <h3 class="mb-3">Bilal — Co-Founder & Senior Designer</h3>
+                            <p class="mb-0">
+                                With 6+ years of experience in interior design, Bilal is a creative designer with a sharp eye for detail and a love for bespoke interiors. He brings each client’s personality into their space through unique ideas and thoughtful detailing, making every project stylish, functional, and one of a kind.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="fact-item text-center bg-light h-100 p-5 pt-0">
+                            <div class="mb-3">
+                                <img src="img/Team/Adnan.jpeg" alt="Adnan Pawaskar" class="team-img">
+                            </div>
+                            <h3 class="mb-3">Adnan Pawaskar — Co-Founder & Associate Designer</h3>
+                            <p class="mb-0">
+                                With 6+ years of experience in residential and commercial interiors, Adnan specializes in site execution and project coordination. He ensures every design is delivered with precision, practicality, and on-time completion.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </div>-->
-    <!-- / About End -->
-    <!-- Team / About Start -->
 
-    <div class="container-xxl py-5">
-       
-        <div class="container pt-5">
-            <div class="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
-                <h4 class="section-title">About Us - Fame Studio</h4>
-                <h1 class="display-5 mb-4">Designing Spaces with Heart, Craft, and Clarity</h1>
-                <p>Based in the bustling city of Mumbai, Fame Studio is more than just an interior design firm—it’s a creative house where ideas meet craftsmanship and vision becomes reality. We believe that interiors should do more than look beautiful; they should inspire, comfort, and truly reflect the people who live in them. Every home or commercial space we design is carefully curated to combine elegance with functionality, ensuring it feels timeless today and adaptable for tomorrow.</p>
-                <p>Our work spans across luxury residential interiors, boutique commercial projects, and bespoke furniture design. What sets us apart is the way we listen—understanding your lifestyle, your aspirations, and even the smallest details that matter most to you. With this foundation, we create designs that are deeply personal, seamlessly practical, and rooted in global inspiration while celebrating Mumbai’s cultural richness.</p>
-                <p class="mb-4">Our work covers luxury homes, commercial projects, and custom furniture. What makes us special is the way we listen first—to your stories, your lifestyle, and your dreams. Every design we create is not just a project, but a reflection of the people who will live and work in it. The outcome is always personal, practical, and timeless..</p>
-            </div>
-            <div class="row g-4">
-
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="fact-item text-center bg-light h-100 p-5 pt-0">
-                        <div class="mb-3">
-                            <img src="img/Team/Umar.jpeg" alt="Umar Memon" class="team-img">
-                        </div>
-                        <h3 class="mb-3">Umar Memon — Founder & Design Head</h3>
-                        <p class="mb-0">
-                            With 10+ years of experience in residential and commercial interiors, Umar shapes Fame Studio’s modern yet soulful style. He is known for understanding clients’ needs and turning them into elegant, practical, and timeless spaces.
+        <!-- Team / About End -->
+        <!-- About End -->
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-body footer mt-5 pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-6 col-md-6">
+                        <h3 class="text-light mb-4">Address</h3>
+                        <p class="mb-0 text-justify">
+                            <i class="fa fa-map-marker-alt text-primary me-3"></i>
+                            Heena Arcade, Off.No. 314/315
                         </p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="fact-item text-center bg-light h-100 p-5 pt-0">
-                        <div class="mb-3">
-                            <img src="img/Team/Bilal.jpeg" alt="Bilal" class="team-img">
-                        </div>
-                        <h3 class="mb-3">Bilal — Co-Founder & Senior Designer</h3>
-                        <p class="mb-0">
-                            Bilal is a creative designer with a sharp eye for detail and a love for bespoke interiors. He brings each client’s personality into their space through unique ideas and thoughtful detailing, making every project stylish, functional, and one of a kind.
+                        <p class="mb-0 m-1 text-justify" style="padding-left:22px;">
+                            SV Road, Jogeshwari (West)
                         </p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="fact-item text-center bg-light h-100 p-5 pt-0">
-                        <div class="mb-3">
-                            <img src="img/Team/Adnan.jpeg" alt="Adnan Pawaskar" class="team-img">
-                        </div>
-                        <h3 class="mb-3">Adnan Pawaskar — Co-Founder & Associate Designer</h3>
-                        <p class="mb-0">
-                            With 6+ years of experience in residential and commercial interiors, Adnan specializes in site execution and project coordination. He ensures every design is delivered with precision, practicality, and on-time completion.
+                        <p class="mb-0 m-1 text-justify" style="padding-left:22px;">
+                            Beside Dewan Centre, Off Shalimar Hotel
                         </p>
+                        <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+91 970 2011759</p><p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+91 865 5038677</p>
+                        <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>info@famestudio.co.in</p>
+
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-instagram"></i></a>
+
+                            <a class="btn btn-square btn-outline-body me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
                     </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <!-- Team / About End -->
-    <!-- About End -->
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-6 col-md-6">
-                    <h3 class="text-light mb-4">Address</h3>
-                    <p class="mb-0 text-justify">
-                        <i class="fa fa-map-marker-alt text-primary me-3"></i>
-                        Heena Arcade, Off.No. 314/315
-                    </p>
-                    <p class="mb-0 m-1 text-justify" style="padding-left:22px;">
-                        SV Road, Jogeshwari (West)
-                    </p>
-                    <p class="mb-0 m-1 text-justify" style="padding-left:22px;">
-                        Beside Dewan Centre, Off Shalimar Hotel
-                    </p>
-                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+91 865 5038677</p>
-                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>info@famestudio.co.in</p>
-
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-body me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <div class="col-lg-3 col-md-6 d-none d-lg-block">
+                        <h3 class="text-light mb-4">Services</h3>
+                        <a class="btn btn-link" href="Project-1.html">Residential Interiors</a>
+                        <a class="btn btn-link" href="Project-5.html">Commercial Interiors </a>
+                        <a class="btn btn-link" href="Project-2.html">Space Planning & Layouts </a>
+                        <a class="btn btn-link" href="Project-4.html">3D Visuals & Design Concepts</a>
+                        <a class="btn btn-link" href="Project-5.html">Furniture Design & Customization </a>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 d-none d-lg-block">
-                    <h3 class="text-light mb-4">Services</h3>
-                    <a class="btn btn-link" href="Project-1.html">Residential Interiors</a>
-                    <a class="btn btn-link" href="Project-5.html">Commercial Interiors </a>
-                    <a class="btn btn-link" href="Project-2.html">Space Planning & Layouts </a>
-                    <a class="btn btn-link" href="Project-4.html">3D Visuals & Design Concepts</a>
-                    <a class="btn btn-link" href="Project-5.html">Furniture Design & Customization </a>
-                </div>
-                <div class="col-lg-3 col-md-6 d-none d-lg-block">
-                    <h3 class="text-light mb-4">Quick Links</h3>
-                    <a class="btn btn-link" href="about.html">About Us</a>
-                    <a class="btn btn-link" href="contact.html">Contact Us</a>
-                    <a class="btn btn-link" href="service.html">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
+                    <div class="col-lg-3 col-md-6 d-none d-lg-block">
+                        <h3 class="text-light mb-4">Quick Links</h3>
+                        <a class="btn btn-link" href="about.html">About Us</a>
+                        <a class="btn btn-link" href="contact.html">Contact Us</a>
+                        <a class="btn btn-link" href="service.html">Our Services</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                        <a class="btn btn-link" href="">Privacy</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container-fluid copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a href="#">Fame Interior Design Studio</a>, All Right Reserved.
-                    </div>
-                    <!--<div class="col-md-6 text-center text-md-end">-->
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    <!--Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+            <div class="container-fluid copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a href="#">Fame Interior Design Studio</a>, All Right Reserved.
+                        </div>
+                        <!--<div class="col-md-6 text-center text-md-end">-->
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        <!--Designed By <a href="https://htmlcodex.com">HTML Codex</a>
                     </div>-->
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Footer End -->
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+        <!-- Footer End -->
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/tempusdominus/js/moment.min.js"></script>
+        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
 </body>
 
 </html>
