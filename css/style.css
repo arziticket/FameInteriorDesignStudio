@@ -5,6 +5,13 @@
     --dark: #252525;
 }
 
+@font-face {
+    font-family: 'Fontspring-DEMO-theseasons-bd'; /* Name you will use in CSS */
+    src: url('../fonts/Fontspring-DEMO-theseasons-bd.otf') format('opentype'); /* path to your font file */
+    font-weight: normal;
+    font-style: normal;
+}
+
 h1,
 h2,
 .h1,
@@ -238,6 +245,15 @@ h6,
 
 .page-header1 {
     background:  url('../img/formal View 1.png') center center no-repeat;
+    background-size: cover;
+}
+
+.page-header2 {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url('../img/LIVING ROOM VIEW - 4.png') center center no-repeat;
+    background-size: cover;
+}
+.page-header3 {
+    background: url(../img/hero-5.png) center center no-repeat;
     background-size: cover;
 }
 
